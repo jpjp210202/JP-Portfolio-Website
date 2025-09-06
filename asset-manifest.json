@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/JP-Portfolio-Website/static/css/main.85a6b54c.css",
+    "main.js": "/JP-Portfolio-Website/static/js/main.698b0bfb.js",
+    "static/js/453.c786e4af.chunk.js": "/JP-Portfolio-Website/static/js/453.c786e4af.chunk.js",
+    "static/media/firebot10.jpg": "/JP-Portfolio-Website/static/media/firebot10.37e8474d0c27b26d960b.jpg",
+    "static/media/firebot11.jpg": "/JP-Portfolio-Website/static/media/firebot11.4f5e81259d0c9e855007.jpg",
+    "static/media/firebot8.jpg": "/JP-Portfolio-Website/static/media/firebot8.2d8eb7cb8773a10af84b.jpg",
+    "static/media/firebot5.jpg": "/JP-Portfolio-Website/static/media/firebot5.3de92b87c20ddbecc809.jpg",
+    "static/media/firebot4.jpg": "/JP-Portfolio-Website/static/media/firebot4.8773018447818c862777.jpg",
+    "static/media/firebot3.jpg": "/JP-Portfolio-Website/static/media/firebot3.f44421a927297f04a9e1.jpg",
+    "static/media/firebot7.jpg": "/JP-Portfolio-Website/static/media/firebot7.13f8785ed8f178ca84d1.jpg",
+    "static/media/firebot2.jpg": "/JP-Portfolio-Website/static/media/firebot2.2b8e71f90f00587a7dde.jpg",
+    "static/media/firebot1.jpg": "/JP-Portfolio-Website/static/media/firebot1.79de0d134182923f7017.jpg",
+    "static/media/firebot9.jpg": "/JP-Portfolio-Website/static/media/firebot9.576b95a5666a0a0a237e.jpg",
+    "static/media/firebot6.jpg": "/JP-Portfolio-Website/static/media/firebot6.078f497491bffd00b18a.jpg",
+    "static/media/firebot13.jpg": "/JP-Portfolio-Website/static/media/firebot13.17bb3c93b40eb9802451.jpg",
+    "static/media/firebot12.jpg": "/JP-Portfolio-Website/static/media/firebot12.b43ce0252bfa9a6c5634.jpg",
+    "static/media/convocation.jpg": "/JP-Portfolio-Website/static/media/convocation.d6b30c7b2fe7d02249ef.jpg",
+    "static/media/marksheet1.jpg": "/JP-Portfolio-Website/static/media/marksheet1.a117d6f30140ca818315.jpg",
+    "static/media/marksheet2.jpg": "/JP-Portfolio-Website/static/media/marksheet2.a117d6f30140ca818315.jpg",
+    "static/media/marksheet3.jpg": "/JP-Portfolio-Website/static/media/marksheet3.a117d6f30140ca818315.jpg",
+    "static/media/marksheet4.jpg": "/JP-Portfolio-Website/static/media/marksheet4.a117d6f30140ca818315.jpg",
+    "static/media/overall_marksheet.jpg": "/JP-Portfolio-Website/static/media/overall_marksheet.a117d6f30140ca818315.jpg",
+    "static/media/logo.png": "/JP-Portfolio-Website/static/media/logo.c411185c347e8a821b21.png",
+    "static/media/courselogo.png": "/JP-Portfolio-Website/static/media/courselogo.712bf9c192894d8e52db.png",
+    "index.html": "/JP-Portfolio-Website/index.html",
+    "main.85a6b54c.css.map": "/JP-Portfolio-Website/static/css/main.85a6b54c.css.map",
+    "main.698b0bfb.js.map": "/JP-Portfolio-Website/static/js/main.698b0bfb.js.map",
+    "453.c786e4af.chunk.js.map": "/JP-Portfolio-Website/static/js/453.c786e4af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85a6b54c.css",
+    "static/js/main.698b0bfb.js"
+  ]
+}
