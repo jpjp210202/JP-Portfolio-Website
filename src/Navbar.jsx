@@ -6,7 +6,7 @@ import { useState } from "react";
 const menu = {
   "About Me": [
     { label: "Overview", to: "/about" },
-    { label: "My Resume", to: process.env.PUBLIC_URL + "/JP_CV_2025_ATS.pdf", external: true },
+    { label: "My Resume", to: "/JP_CV_2025_ATS.pdf", external: true },
   ],
   Education: [
     { label: "Masters Degree", to: "/education/mtech" },

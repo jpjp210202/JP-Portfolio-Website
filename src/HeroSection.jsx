@@ -32,7 +32,7 @@ function HeroSection() {
         >
           <div className="w-full h-full bg-black rounded-xl flex items-center justify-center">
             <img
-              src={`${process.env.PUBLIC_URL}/jp-photo.png`}
+              src="/jp-photo.png"
               alt="JP Jaipuneeth"
               className="w-[310px] h-[440px] rounded-xl object-cover shadow-2xl"
             />
