@@ -61,7 +61,7 @@ function FirebotPage() {
       {/* Links */}
       <div className="flex flex-wrap justify-center gap-4 mb-8">
         <a
-          href="https://github.com/jpjp210202/firebot"
+          href="https://github.com/jpjp210202/"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-700 transition"

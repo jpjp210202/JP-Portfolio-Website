@@ -1,19 +1,30 @@
 // === FILE: src/App.js ===
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import HeroSection from "./HeroSection";
 import HighlightsSection from "./HighlightsSection";
+import ContactSection from "./ContactSection";
 import Navbar from "./Navbar";
+import ScrollProgress from "./ScrollProgress"; // ✅ Import new component
 
-// Example pages we’ll create
+// Pages
 import AboutPage from "./pages/AboutPage";
 import MTechPage from "./pages/education/MTechPage";
 import FirebotPage from "./pages/projects/FirebotPage";
 
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <Router>
+      {/* ✅ Progress bar always on top */}
+      <ScrollProgress />
       <Navbar />
-      {/* Padding so content isn’t hidden behind navbar */}
       <main className="pt-16">
         <Routes>
           {/* Home route */}
@@ -23,6 +34,7 @@ function App() {
               <>
                 <HeroSection />
                 <HighlightsSection />
+                <ContactSection /> {/* ✅ Contact section stays here */}
               </>
             }
           />
@@ -30,11 +42,14 @@ function App() {
           {/* About */}
           <Route path="/about" element={<AboutPage />} />
 
-          {/* Education example */}
+          {/* Education */}
           <Route path="/education/mtech" element={<MTechPage />} />
 
-          {/* Project example */}
+          {/* Projects */}
           <Route path="/projects/firebot" element={<FirebotPage />} />
+
+          {/* ✅ Catch-all */}
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </main>
     </Router>
