@@ -6,10 +6,16 @@ function MediaGallery({ media }) {
   const videos = media.filter((item) => item.type === "youtube");
 
   // State for fullscreen modal
-  const [current, setCurrent] = useState(null); // index
+  const [current, setCurrent] = useState(0); // index
   const [isOpen, setIsOpen] = useState(false);
-  const [section, setSection] = useState(null); // "image" or "youtube"
+  const [section, setSection] = useState("image"); // "image" or "youtube"+ useEffect(() => { setCurrent(0); }, [section, media]);
 
+  // const imgStripRef = useRef(null);
+  // const vidStripRef = useRef(null);
+  // useEffect(() => {
+  //   if (imgStripRef.current) imgStripRef.current.scrollLeft = 0;
+  //   if (vidStripRef.current) vidStripRef.current.scrollLeft = 0;
+  // }, [section, media]);
   const prev = () => {
     if (section === "image" && current !== null) {
       setCurrent((c) => (c === 0 ? images.length - 1 : c - 1));
