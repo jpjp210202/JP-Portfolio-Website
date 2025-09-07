@@ -13,6 +13,10 @@ import ScrollProgress from "./ScrollProgress"; // ✅ Import new component
 // Pages
 import AboutPage from "./pages/AboutPage";
 import MTechPage from "./pages/education/MTechPage";
+import BEPage from "./pages/education/BEPage";
+import HSSchool from "./pages/education/HSSchool";
+import SecSchoolPage from "./pages/education/SecSchoolPage";
+
 import FirebotPage from "./pages/projects/FirebotPage";
 
 function App() {
@@ -44,6 +48,9 @@ function App() {
 
           {/* Education */}
           <Route path="/education/mtech" element={<MTechPage />} />
+          <Route path="/education/be" element={<BEPage />} />
+          <Route path="/education/hss" element={<HSSchool />} />
+          <Route path="/education/sslc" element={<SecSchoolPage />} />
 
           {/* Projects */}
           <Route path="/projects/firebot" element={<FirebotPage />} />

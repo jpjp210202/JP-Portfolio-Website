@@ -11,7 +11,7 @@ const menu = {
   Education: [
     { label: "Masters Degree", to: "/education/mtech" },
     { label: "Bachelors Degree", to: "/education/be" },
-    { label: "Higher Secondary School", to: "/education/pu" },
+    { label: "Higher Secondary School", to: "/education/hss" },
     { label: "Secondary School", to: "/education/sslc" },
   ],
   "Work Experience": [
