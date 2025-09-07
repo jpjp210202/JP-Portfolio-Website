@@ -35,7 +35,7 @@ function JSWExperiencePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white text-black p-8 md:p-16 relative">
+    <div className="min-h-screen bg-white text-black p-8 md:p-16 md-4 relative">
       {/* Logos at top-left & top-right */}
       {companyLogo && (
         <img
@@ -54,7 +54,10 @@ function JSWExperiencePage() {
 
       {/* Title Section */}
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-2">
-        🏭 JSW STEEL, VIJAYANAGAR
+        🏭
+      </h1>
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-4">
+        JSW STEEL, VIJAYANAGAR
       </h1>
       <h2 className="text-2xl md:text-3xl font-semibold text-center mb-2">
         Assistant Manager, Electrical & Automation
