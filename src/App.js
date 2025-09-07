@@ -17,6 +17,8 @@ import BEPage from "./pages/education/BEPage";
 import HSSchool from "./pages/education/HSSchool";
 import SecSchoolPage from "./pages/education/SecSchoolPage";
 
+import JSWExperiencePage from "./pages/work/JSWExperiencePage";
+
 import FirebotPage from "./pages/projects/FirebotPage";
 
 function App() {
@@ -51,6 +53,9 @@ function App() {
           <Route path="/education/be" element={<BEPage />} />
           <Route path="/education/hss" element={<HSSchool />} />
           <Route path="/education/sslc" element={<SecSchoolPage />} />
+
+          {/* Work */}
+          <Route path="/work/jsw" element={<JSWExperiencePage />} />
 
           {/* Projects */}
           <Route path="/projects/firebot" element={<FirebotPage />} />

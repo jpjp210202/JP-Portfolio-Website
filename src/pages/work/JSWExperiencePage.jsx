@@ -3,8 +3,10 @@ import MediaGallery from "../../components/MediaGallery";
 // JSW work images
 import jsw1 from "../../assets/work/jsw/jsw1.jpg";
 import jsw2 from "../../assets/work/jsw/jsw2.jpg";
-import jsw3 from "../../assets/work/jsw/jsw3.jpg";
-import jsw4 from "../../assets/work/jsw/jsw4.jpg";
+import jsw3 from "../../assets/work/jsw/jsw1.jpeg";
+import jsw4 from "../../assets/work/jsw/jsw2.jpeg";
+import jsw5 from "../../assets/work/jsw/jsw3.jpeg";
+import jsw6 from "../../assets/work/jsw/jsw4.jpeg";
 
 function JSWExperiencePage() {
   const media = [
@@ -12,6 +14,8 @@ function JSWExperiencePage() {
     { type: "image", src: jsw2 },
     { type: "image", src: jsw3 },
     { type: "image", src: jsw4 },
+    { type: "image", src: jsw5 },
+    { type: "image", src: jsw6 },
   ];
 
   return (
