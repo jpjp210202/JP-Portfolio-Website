@@ -8,7 +8,8 @@ import HeroSection from "./HeroSection";
 import HighlightsSection from "./HighlightsSection";
 import ContactSection from "./ContactSection";
 import Navbar from "./Navbar";
-import ScrollProgress from "./ScrollProgress"; // ✅ Import new component
+import ScrollProgress from "./ScrollProgress";
+import ScrollToTop from "./components/ScrollToTop"; // ✅ Import new component
 
 // Pages
 import AboutPage from "./pages/AboutPage";
@@ -40,6 +41,7 @@ function App() {
       {/* ✅ Progress bar always on top */}
       <ScrollProgress />
       <Navbar />
+      <ScrollToTop /> {/* ✅ Added here */}
       <main className="pt-16">
         <Routes>
           {/* Home route */}
@@ -77,7 +79,7 @@ function App() {
           <Route path="/projects/instrument-classifier" element={<InstrumentClassifierPage />} />
           <Route path="/projects/aco" element={<ACOPage />} />
           <Route path="/projects/iot-monitor" element={<IotMonitorPage />} />
-                          
+
           {/* ✅ Catch-all */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
