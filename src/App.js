@@ -27,7 +27,8 @@ import JetbotCollisionPage from "./pages/projects/JetbotCollisionPage";
 import AirGestureWheelchairPage from "./pages/projects/AirGestureWheelchairPage";
 import WeldDetectionPage from "./pages/projects/WeldDetectionPage";
 import InstrumentClassifierPage from "./pages/projects/InstrumentClassifierPage";
-
+import ACOPage from "./pages/projects/ACOPage";
+import IotMonitorPage from "./pages/projects/IotMonitorPage";
 
 function App() {
   useEffect(() => {
@@ -74,6 +75,8 @@ function App() {
           <Route path="/projects/wheelchair" element={<AirGestureWheelchairPage />} />
           <Route path="/projects/welddetect" element={<WeldDetectionPage />} />
           <Route path="/projects/instrument-classifier" element={<InstrumentClassifierPage />} />
+          <Route path="/projects/aco" element={<ACOPage />} />
+          <Route path="/projects/iot-monitor" element={<IotMonitorPage />} />
                           
           {/* ✅ Catch-all */}
           <Route path="*" element={<Navigate to="/" replace />} />
