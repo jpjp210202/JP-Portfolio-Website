@@ -21,18 +21,18 @@ const menu = {
     {
       label: "Robotics & Autonomous Systems Projects",
       children: [
-        { label: "AI-Powered Firefighting Robot", to: "/projects/ai-firebot" },
-        { label: "Fruit Detection Robot", to: "/projects/fruit-detector" },
-        { label: "ESP32 Rover with BLE Tracking", to: "/projects/esp32-rover" },
+        { label: "AI-Powered Firefighting Robot (in progress)", to: "/projects/ai-firebot" },
+        { label: "Jetson Nano Based Fruit Detection Robot", to: "/projects/fruit-detector" },
+        { label: "Smart Bluetooth-based Follower Robot", to: "/projects/esp32-rover" },
+        { label: "Firefighting - Line Follower Robot", to: "/projects/firebot" },
         { label: "JetBot - Collision Avoidance", to: "/projects/jetbot" },
-        { label: "Line-Follower Firefighting Robot", to: "/projects/firebot" },
         { label: "Air Gesture controlled Wheelchair", to: "/projects/wheelchair" },
       ],
     },
     {
       label: "AI & Machine Learning Projects",
       children: [
-        { label: "Weld Defect Detection", to: "/projects/weld-detector" },
+        { label: "Weld Defect Detection", to: "/projects/welddetect" },
         { label: "Instrument Classifier (1D CNN)", to: "/projects/instrument-classifier" },
         { label: "ACO Pathfinding Simulator", to: "/projects/aco" },
       ],

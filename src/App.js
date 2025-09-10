@@ -19,7 +19,15 @@ import SecSchoolPage from "./pages/education/SecSchoolPage";
 
 import JSWExperiencePage from "./pages/work/JSWExperiencePage";
 
+import AIFireFighterPage from "./pages/projects/AIFireFighterPage";
+import BluetoothFollowerPage from "./pages/projects/BluetoothFollowerPage";
+import FruitDetectionPage from "./pages/projects/FruitDetectionPage";
 import FirebotPage from "./pages/projects/FirebotPage";
+import JetbotCollisionPage from "./pages/projects/JetbotCollisionPage";
+import AirGestureWheelchairPage from "./pages/projects/AirGestureWheelchairPage";
+import WeldDetectionPage from "./pages/projects/WeldDetectionPage";
+import InstrumentClassifierPage from "./pages/projects/InstrumentClassifierPage";
+
 
 function App() {
   useEffect(() => {
@@ -58,8 +66,15 @@ function App() {
           <Route path="/work/jsw" element={<JSWExperiencePage />} />
 
           {/* Projects */}
+          <Route path="/projects/ai-firebot" element={<AIFireFighterPage />} />
+          <Route path="/projects/fruit-detector" element={<FruitDetectionPage />} />
+          <Route path="/projects/esp32-rover" element={<BluetoothFollowerPage />} />
           <Route path="/projects/firebot" element={<FirebotPage />} />
-
+          <Route path="/projects/jetbot" element={<JetbotCollisionPage />} />
+          <Route path="/projects/wheelchair" element={<AirGestureWheelchairPage />} />
+          <Route path="/projects/welddetect" element={<WeldDetectionPage />} />
+          <Route path="/projects/instrument-classifier" element={<InstrumentClassifierPage />} />
+                          
           {/* ✅ Catch-all */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
