@@ -21,12 +21,13 @@ const menu = {
     {
       label: "Robotics & Autonomous Systems Projects",
       children: [
-        { label: "AI-Powered Firefighting Robot (in progress)", to: "/projects/ai-firebot" },
-        { label: "Jetson Nano Based Fruit Detection Robot", to: "/projects/fruit-detector" },
-        { label: "Smart Bluetooth-based Follower Robot", to: "/projects/esp32-rover" },
-        { label: "Firefighting - Line Follower Robot", to: "/projects/firebot" },
-        { label: "JetBot - Collision Avoidance", to: "/projects/jetbot" },
-        { label: "Air Gesture controlled Wheelchair", to: "/projects/wheelchair" },
+        { label: "(in progress)AI-Powered Firefighting Robot | Jetson Nano | RaspberryPi 4B", to: "/projects/ai-firebot" },
+        { label: "Hand-Eye Calibration | Doosan A0509 | ChArUco", to: "/projects/handeye" },
+        { label: "Farm-Fruit Detection Robot | Jetson Nano", to: "/projects/fruit-detector" },
+        { label: "Smart Bluetooth Follower Rover | ESP32", to: "/projects/esp32-rover" },
+        { label: "Firefighting Robot | Line Follow | RaspberryPi 4B & Arduino UNO", to: "/projects/firebot" },
+        { label: "Collision Avoidance Rover | Jetson Nano | JetBot", to: "/projects/jetbot" },
+        { label: "Air Gesture controlled Wheelchair | Arduino UNO", to: "/projects/wheelchair" },
       ],
     },
     {
@@ -47,26 +48,37 @@ const menu = {
     },
   ],
   "Paper Publications": [
-    { label: "ICMRACC 2025", to: "/papers/icmracc" },
-    { label: "Sarcasm Detection", to: "/papers/sarcasm" },
+    {
+      label: "Sarcasm Detection in Conversational Contexts | ICMRACC, London 2025",
+      to: "https://www.linkedin.com/posts/jpjaipuneeth_excited-to-share-a-proud-milestone-in-my-activity-7368552073631592449-qyw8?utm_source=share&utm_medium=member_desktop&rcm=ACoAADBXCUcBgJ0mLlBcriQ7PEYWitKJJ3Ob6Zs",
+      external: true
+    },
+    {
+      label: "A Review on Generative Design in Robotics | ICMRACC, London 2025",
+      to: "https://www.linkedin.com/posts/jpjaipuneeth_excited-to-share-a-proud-milestone-in-my-activity-7368552073631592449-qyw8?utm_source=share&utm_medium=member_desktop&rcm=ACoAADBXCUcBgJ0mLlBcriQ7PEYWitKJJ3Ob6Zs",
+      external: true
+    }
   ],
+
   Internships: [
-    { label: "CMTI", to: "/internships/cmti" },
-    { label: "Yaskawa", to: "/internships/yaskawa" },
+    { label: "CMTI | 2025", to: "/internships/cmti" },
+    { label: "PowerGrid | 2021", to: "/internships/powergrid" },
   ],
   "Awards- Recognitions": [
     { label: "Best Intern", to: "/awards/intern" },
     { label: "IEEE Presenter", to: "/awards/ieee" },
   ],
-  Skills: [{ label: "Overview", to: "/skills" }],
-  "Technical Workshops": [
-    { label: "Microrobotics", to: "/workshops/micro" },
-    { label: "Rapid Manufacturing", to: "/workshops/rapid" },
+  Skills: [
+  { label: "Technical Skills", to: "/skills/technical" },
+  { label: "Professional Skills", to: "/skills/professional" },
+],
+  "Workshops, Course-Certifications": [
+    { label: "View Workshops and Courses", to: "/workshops_courses/workcourse" },
   ],
-  "Leaderships- Volunteering": [
-    { label: "Event Coordinator", to: "/leadership/event" },
-    { label: "NSS", to: "/leadership/nss" },
-  ],
+  // "Leaderships- Volunteering": [
+  //   { label: "Event Coordinator", to: "/leadership/event" },
+  //   { label: "NSS", to: "/leadership/nss" },
+  // ],
   Strengths: [{ label: "Overview", to: "/strengths" }],
   Hobbies: [{ label: "Overview", to: "/hobbies" }],
 };
@@ -109,7 +121,13 @@ function Navbar() {
               </span>
 
               {/* Dropdown */}
-              <ul className="absolute left-0 mt-2 hidden group-hover:block bg-gray-800 rounded shadow-md py-2 min-w-max">
+              <ul
+  className={`absolute mt-2 hidden group-hover:block bg-gray-800 rounded shadow-md py-2 min-w-max whitespace-nowrap ${
+    ["Strengths", "Hobbies"].includes(section) ? "right-0" : "left-0"
+  }`}
+>
+
+
                 {items.map((item, idx) => (
                   <li key={idx} className="px-2 py-1">
                     {item.children ? (

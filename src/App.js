@@ -13,6 +13,7 @@ import ScrollToTop from "./components/ScrollToTop"; // ✅ Import new component
 
 // Pages
 import AboutPage from "./pages/AboutPage";
+
 import MTechPage from "./pages/education/MTechPage";
 import BEPage from "./pages/education/BEPage";
 import HSSchool from "./pages/education/HSSchool";
@@ -30,6 +31,18 @@ import WeldDetectionPage from "./pages/projects/WeldDetectionPage";
 import InstrumentClassifierPage from "./pages/projects/InstrumentClassifierPage";
 import ACOPage from "./pages/projects/ACOPage";
 import IotMonitorPage from "./pages/projects/IotMonitorPage";
+import HandEyeCalibrationPage from "./pages/projects/HandEyeCalibrationPage";
+
+import CMTIPage from "./pages/internships/CMTIPage";
+import PowergridPage from "./pages/internships/PowergridPage";
+
+import TechnicalSkillsPage from "./pages/skills/TechnicalSkillsPage";
+import ProfessionalSkillsPage from "./pages/skills/ProfessionalSkillsPage";
+
+import WorkshopsCertificationsPage from "./pages/workshops_courses/WorkshopsCertificationsPage";
+
+import StrengthsPage from "./pages/strengths/StrengthsPage";
+import HobbiesPage from "./pages/hobbies/HobbiesPage";
 
 function App() {
   useEffect(() => {
@@ -70,6 +83,7 @@ function App() {
 
           {/* Projects */}
           <Route path="/projects/ai-firebot" element={<AIFireFighterPage />} />
+          <Route path="/projects/handeye" element={<HandEyeCalibrationPage />} />
           <Route path="/projects/fruit-detector" element={<FruitDetectionPage />} />
           <Route path="/projects/esp32-rover" element={<BluetoothFollowerPage />} />
           <Route path="/projects/firebot" element={<FirebotPage />} />
@@ -79,6 +93,20 @@ function App() {
           <Route path="/projects/instrument-classifier" element={<InstrumentClassifierPage />} />
           <Route path="/projects/aco" element={<ACOPage />} />
           <Route path="/projects/iot-monitor" element={<IotMonitorPage />} />
+
+          {/* Internships */}
+          <Route path="/internships/cmti" element={<CMTIPage/>} />
+          <Route path="/internships/powergrid" element={<PowergridPage/>} />
+
+          {/* Skills */}
+          <Route path="/skills/technical" element={<TechnicalSkillsPage/>} />
+          <Route path="/skills/professional" element={<ProfessionalSkillsPage/>} />
+
+          {/* WorkshopsCertificationsPage */}
+          <Route path="/workshops_courses/workcourse" element={<WorkshopsCertificationsPage/>} />
+          
+          <Route path="/strengths" element={<StrengthsPage/>} />
+          <Route path="/hobbies" element={<HobbiesPage/>} />
 
           {/* ✅ Catch-all */}
           <Route path="*" element={<Navigate to="/" replace />} />
