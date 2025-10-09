@@ -5,7 +5,7 @@ import { motion } from "framer-motion"; // ✅ Import Framer Motion
 function HeroSection() {
   return (
     <section className="relative min-h-screen flex flex-col md:flex-row justify-center items-center px-4 overflow-hidden 
-      bg-gradient-to-b from-black via-gray-100 to-gray-900">
+      bg-gradient-to-b from-black via-gray-300 to-gray-900">
       {/* Background Particles */}
       <Particles
         className="absolute inset-0 -z-10"

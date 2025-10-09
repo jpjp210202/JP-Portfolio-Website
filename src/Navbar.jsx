@@ -5,9 +5,14 @@ import { useState } from "react";
 // Menu structure for all sections
 const menu = {
   "About Me": [
-    { label: "Overview", to: "/about" },
-    { label: "My Resume", to: "/JP_CV_2025_ATS.pdf", external: true },
-  ],
+  { label: "Overview", to: "/about" },
+  {
+    label: "CV & Resume",
+    to: "https://drive.google.com/drive/folders/1up4EVU3Myh8xOIIQUEDu1pOiUL-Xpb1t?usp=sharing",
+    external: true, // ✅ tells the navbar to open it as a link
+  },
+],
+
   Education: [
     { label: "Masters Degree", to: "/education/mtech" },
     { label: "Bachelors Degree", to: "/education/be" },
@@ -22,6 +27,7 @@ const menu = {
       label: "Robotics & Autonomous Systems Projects",
       children: [
         { label: "(in progress)AI-Powered Firefighting Robot | Jetson Nano | RaspberryPi 4B", to: "/projects/ai-firebot" },
+        { label: "Bolt-Nut-Screw Sorting | Doosan A0509 | Intel D457", to: "/projects/bnssort" },
         { label: "Hand-Eye Calibration | Doosan A0509 | ChArUco", to: "/projects/handeye" },
         { label: "Farm-Fruit Detection Robot | Jetson Nano", to: "/projects/fruit-detector" },
         { label: "Smart Bluetooth Follower Rover | ESP32", to: "/projects/esp32-rover" },
@@ -33,6 +39,7 @@ const menu = {
     {
       label: "AI & Machine Learning Projects",
       children: [
+        { label: "Multilingual Fake Review & Warranty Fraud Detection System", to: "/projects/frauddetect" },
         { label: "Weld Defect Detection", to: "/projects/welddetect" },
         { label: "Instrument Classifier (1D CNN)", to: "/projects/instrument-classifier" },
         { label: "ACO Pathfinding Simulator", to: "/projects/aco" },

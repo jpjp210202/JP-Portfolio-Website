@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
 import HeroSection from "./HeroSection";
 import HighlightsSection from "./HighlightsSection";
 import ContactSection from "./ContactSection";
@@ -28,10 +29,12 @@ import FirebotPage from "./pages/projects/FirebotPage";
 import JetbotCollisionPage from "./pages/projects/JetbotCollisionPage";
 import AirGestureWheelchairPage from "./pages/projects/AirGestureWheelchairPage";
 import WeldDetectionPage from "./pages/projects/WeldDetectionPage";
+import FraudDetectionPage from "./pages/projects/FraudDetectionPage";
 import InstrumentClassifierPage from "./pages/projects/InstrumentClassifierPage";
 import ACOPage from "./pages/projects/ACOPage";
 import IotMonitorPage from "./pages/projects/IotMonitorPage";
 import HandEyeCalibrationPage from "./pages/projects/HandEyeCalibrationPage";
+import BoltNutScrewSort from "./pages/projects/BoltNutScrewSort";
 
 import CMTIPage from "./pages/internships/CMTIPage";
 import PowergridPage from "./pages/internships/PowergridPage";
@@ -83,12 +86,14 @@ function App() {
 
           {/* Projects */}
           <Route path="/projects/ai-firebot" element={<AIFireFighterPage />} />
+          <Route path="/projects/bnssort" element={<BoltNutScrewSort/>} />
           <Route path="/projects/handeye" element={<HandEyeCalibrationPage />} />
           <Route path="/projects/fruit-detector" element={<FruitDetectionPage />} />
           <Route path="/projects/esp32-rover" element={<BluetoothFollowerPage />} />
           <Route path="/projects/firebot" element={<FirebotPage />} />
           <Route path="/projects/jetbot" element={<JetbotCollisionPage />} />
           <Route path="/projects/wheelchair" element={<AirGestureWheelchairPage />} />
+          <Route path="/projects/frauddetect" element={<FraudDetectionPage />} />
           <Route path="/projects/welddetect" element={<WeldDetectionPage />} />
           <Route path="/projects/instrument-classifier" element={<InstrumentClassifierPage />} />
           <Route path="/projects/aco" element={<ACOPage />} />
